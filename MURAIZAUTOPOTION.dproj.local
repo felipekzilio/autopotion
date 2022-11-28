@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/11/24 19:03:19.000.917,=C:\Users\lfeli\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/11/27 15:52:25.000.488,=C:\Users\lfeli\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/11/27 16:13:44.000.172,C:\Users\lfeli\OneDrive\Área de Trabalho\AUTO POTION MURAIZ\Unit1.dfm=C:\Users\lfeli\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/11/27 16:13:44.000.172,C:\Users\lfeli\OneDrive\Área de Trabalho\AUTO POTION MURAIZ\Unit1.pas=C:\Users\lfeli\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/11/27 16:13:46.000.060,C:\Users\lfeli\OneDrive\Área de Trabalho\AUTO POTION MURAIZ\Project1.dproj=C:\Users\lfeli\OneDrive\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/11/27 16:18:52.000.889,C:\Users\lfeli\OneDrive\Área de Trabalho\AUTO POTION MURAIZ\MURAIZAUTOPOTION.dproj=C:\Users\lfeli\OneDrive\Área de Trabalho\AUTO POTION MURAIZ\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
