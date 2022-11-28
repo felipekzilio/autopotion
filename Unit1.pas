@@ -19,6 +19,8 @@ type
     minimize: TImage;
     SITE: TImage;
     Timer2: TTimer;
+    Timer3: TTimer;
+    Timer4: TTimer;
     procedure AUTOCTRLClick(Sender: TObject);
     procedure CheckBox2Click(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
@@ -26,6 +28,8 @@ type
     procedure minimizeClick(Sender: TObject);
     procedure SITEClick(Sender: TObject);
     procedure Timer2Timer(Sender: TObject);
+    procedure Timer3Timer(Sender: TObject);
+    procedure Timer4Timer(Sender: TObject);
 
 
   private
@@ -113,12 +117,8 @@ begin
   if CheckBox2.Checked = true then
   begin
   keybd_event(Ord('Q'), 0, 0, 0); //pressiona tecla [A]
-  keybd_event(Ord('W'), 0, 0, 0); //pressiona tecla [A]
-  keybd_event(Ord('E'), 0, 0, 0); //pressiona tecla [A]
   Sleep(2);
   keybd_event(Ord('Q'), 0, KEYEVENTF_KEYUP, 0); //libera tecla [A]
-  keybd_event(Ord('W'), 0, KEYEVENTF_KEYUP, 0); //libera tecla [A]
-  keybd_event(Ord('E'), 0, KEYEVENTF_KEYUP, 0); //libera tecla [A]
   end;
 
   if tbKeyIsDown(VK_F2) then
@@ -147,13 +147,34 @@ procedure TMURAIZ.Timer2Timer(Sender: TObject);
 begin
 
 //if tbKeyIsDown(Código da tecla) then
- keybd_event(Ord('Q'), 0, 0, 0); //pressiona tecla [A]
-  keybd_event(Ord('W'), 0, 0, 0); //pressiona tecla [A]
-  keybd_event(Ord('E'), 0, 0, 0); //pressiona tecla [A]
+
+ keybd_event(Ord('Q'), 0, WM_KEYDOWN, 0); //pressiona tecla [A]
+ Sleep(1);
+  keybd_event(Ord('W'), 0, WM_KEYDOWN, 0); //pressiona tecla [A]
+ Sleep(1);
+  keybd_event(Ord('E'), 0, WM_KEYDOWN, 0); //pressiona tecla [A]
+  Timer3.ENABLED:=TRUE;
+
+end;
+
+procedure TMURAIZ.Timer3Timer(Sender: TObject);
+begin
 
   keybd_event(Ord('Q'), 0, KEYEVENTF_KEYUP, 0); //libera tecla [A]
+ Sleep(1);
   keybd_event(Ord('W'), 0, KEYEVENTF_KEYUP, 0); //libera tecla [A]
+ Sleep(1);
   keybd_event(Ord('E'), 0, KEYEVENTF_KEYUP, 0); //libera tecla [A]
+
+  Timer3.ENABLED:=FALSE;
+end;
+
+procedure TMURAIZ.Timer4Timer(Sender: TObject);
+begin
+ Timer2.enabled:=true;
+
+ Sleep(5);
+  Timer2.enabled:=false;
 end;
 
 end.

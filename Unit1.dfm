@@ -2238,16 +2238,29 @@ object MURAIZ: TMURAIZ
     end
   end
   object Timer1: TTimer
-    Interval = 10
+    Interval = 1
     OnTimer = Timer1Timer
     Left = 80
     Top = 80
   end
   object Timer2: TTimer
     Enabled = False
-    Interval = 200
+    Interval = 1
     OnTimer = Timer2Timer
     Left = 32
     Top = 136
+  end
+  object Timer3: TTimer
+    Enabled = False
+    Interval = 1
+    OnTimer = Timer3Timer
+    Left = 80
+    Top = 136
+  end
+  object Timer4: TTimer
+    Interval = 1
+    OnTimer = Timer4Timer
+    Left = 152
+    Top = 104
   end
 end

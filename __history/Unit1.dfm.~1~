@@ -1,0 +1,71 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  AutoSize = True
+  BiDiMode = bdLeftToRight
+  BorderStyle = bsSingle
+  Caption = 'AutoPotion Autorizado: MURAIZ'
+  ClientHeight = 252
+  ClientWidth = 185
+  Color = clHighlightText
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  ParentBiDiMode = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 185
+    Height = 252
+    Align = alLeft
+    TabOrder = 0
+    ExplicitLeft = 8
+    ExplicitTop = 8
+    ExplicitHeight = 145
+    object CheckBox1: TCheckBox
+      Left = 16
+      Top = 32
+      Width = 97
+      Height = 17
+      Caption = 'Auto CTRL'
+      TabOrder = 0
+      OnClick = CheckBox1Click
+    end
+    object CheckBox2: TCheckBox
+      Left = 16
+      Top = 72
+      Width = 97
+      Height = 17
+      Caption = 'AutoPotion qwe'
+      TabOrder = 1
+      OnClick = CheckBox2Click
+    end
+    object LinkLabel1: TLinkLabel
+      Left = 16
+      Top = 120
+      Width = 119
+      Height = 17
+      Caption = 'F2 ATIVA  F3 DESATIVA'
+      TabOrder = 2
+    end
+    object LinkLabel2: TLinkLabel
+      Left = 16
+      Top = 160
+      Width = 104
+      Height = 17
+      Caption = 'www.muraiz97d.com'
+      TabOrder = 3
+    end
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 40
+    Top = 192
+  end
+end
