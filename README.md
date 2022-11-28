@@ -1,5 +1,5 @@
 # autopotion
-AutoPotion for MuOnline
+Macro teclas  Q,W,E,CTRL
 
 
 Simulação do clique das teclas Q,W,E  10x por segundos
